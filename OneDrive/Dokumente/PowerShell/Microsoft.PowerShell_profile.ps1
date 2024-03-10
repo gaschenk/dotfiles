@@ -286,17 +286,4 @@ Register-ArgumentCompleter -Native -CommandName 'starship' -ScriptBlock {
     $completions.Where{ $_.CompletionText -like "$wordToComplete*" } |
         Sort-Object -Property ListItemText
 }
-
-# Import the Chocolatey Profile that contains the necessary code to enable
-# tab-completions to function for `choco`.
-# Be aware that if you are missing these lines from your profile, tab completion
-# for `choco` will not function.
-# See https://ch0.co/tab-completion for details.
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile))
-{
-    Import-Module "$ChocolateyProfile"
-}
-
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
-#& "C:\Users\Timot\AppData\Local\opam\opam-init\init.sh" > $null 2> $null

@@ -1,0 +1,1 @@
+start $home/.local/share/chezmoi/defaut_keymap.ahk

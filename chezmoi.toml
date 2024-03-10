@@ -1,0 +1,4 @@
+encryption = "age"
+[age]
+identity = "~/chezmoi-key"
+recipient = "age1mdytcyzrv8t8729wd0xw9ceg3azs7f4t52ml3acq49m4y87aa9hqhgawwa"

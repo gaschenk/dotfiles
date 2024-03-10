@@ -1,0 +1,4 @@
+["APPDATA/Local/nvim"]
+	type = "git-repo"
+	url= "https://github.com/gaschenk/nvim-dotfiles.git"
+	refreshPeriod= "24h"
