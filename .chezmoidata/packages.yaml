@@ -72,3 +72,4 @@ packages:
       - minikube
       - kubectl
       - autohotkey
+      - vcpkg
